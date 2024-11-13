@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color:#ffffff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .navbar-brand{
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 500;  
+        }
+        nav{
+            background-color:#fff;
+            box-shadow: 0.8px  0.8px 0.8px 1px #ccc;
+            position: fixed;
+        }
+        h1{
+            font-size:3.2rem;
+            letter-spacing: -0.4px;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+        }
+        .hero-section {
+            font-size: 1.4rem;
+            line-height: 1.3;            
+            letter-spacing: 0.3px;
+        }
+        .img1{
+            height:40px;
+            width:21%;
+            border: #ccc;
+        }
+       .card-body{
+        border: dashed 1px;
+        border-radius: 10px;
+       background-color: #f1f7fd;
+       }
+      .card-body .h2{
+        color:#39c0ff;
+        font-size: 25px;
+        font-weight:bold;
+      }
+      .card-body h6{
+        font-size: 15px;
+      }
+      .card-body .icons{
+        color: #39c0ff;
+      }
+     .card-body span{
+       font-size:20px;
+       font-weight: bold;
+     }
+     .card-body p{
+      font-weight:100 ;
+     }
+      .content-section h1 {
+            font-weight: bold;
+        }
+
+        .img-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .feature-tag {
+            background-color: #F0F8FF;
+            border-radius: 20px;
+            padding: 5px 15px;
+            display: inline-block;
+        }
+
+        .custom-buttons {
+            margin-top: 20px;
+        }
+
+        .custom-buttons .btn {
+            margin-right: 10px;
+        }
+
+        .image-box {
+            max-width: 100%;
+        }
+       .marquee {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #7b5eff, #45b3f7 ,#da92eb);
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 20s linear infinite;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+        .footer {
+      background-color:#f1f7fd;
+      padding: 40px 0;
+      font-size: 14px;
+    }
+    .footer .social-icons a {
+      font-size: 20px;
+      margin-right: 10px;
+      color: #6c757d;
+    }
+    .logo img{
+      height:40px;
+    }
+  @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <img src="asset 0.png" alt="" class="img1">
+    <a class="navbar-brand text-white fw-bold" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mt-3 mb-lg-0  gap-4">
+        <li class="nav-item">
+          <a class="nav-link active text-dark fw-bolder" aria-current="page" href="#">Why MilkRide?</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link text-dark fw-bolder" aria-current="page" href="#">features</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link text-dark fw-bolder" aria-current="page" href="#">Blogs</a>
+        </li>
+    </ul>
+    <button type="button" class="btn btn-dark me-auto">Request Demo</button>
+    </div>
+  </div>
+</nav>
+<section class="hero-section py-5 ">
+<div class="container ">
+    <div class="row">
+        <div class="col-12">
+          <h1 class="d-flex justify-content-center fs-1 fw-bolder m-3">Upgrade Your Dairy Business With Our</h1>
+            <h1 class="d-flex justify-content-center fs-1 fw-bolder">Advanced Milk Delivery Software</h1>
+            <p class="info fst-normal  m-1 fs-6  text-lg-end ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorum quam commodi quisquam corporis iure quod architecto possimus veritatis aliquid. Lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor milk delivery<span class="justify-content-center d-flex mx-auto p-2">MilkRide?</span></p>
+             <div class="d-grid gap-2 col-2 mx-auto m-5">
+               <button class="btn btn-dark" type="button">Get a Demo it's</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row row-cols-1 row-cols-md-4 g-4 ps-5 d-flex justify-content-center">
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h6 class="card-title m-1">An averange</h6>
+        <h2 class="h2">Retailer</h2>
+         <i class="fa-regular fa-clock icons m-1 fs-5 "><span class="text-dark container" style="font-family:Verdana, Geneva, Tahoma, sans-serif">410 hours</span></i>    
+         <p class="card-text fs-6 container-fulid ps-5 ">Invests around 410 hours annually in manual accounting generation tasks.</p>
+         <i class="fa-solid fa-phone-flip icons m-1 fs-5 "><span class="text-dark container" style="font-family:Verdana, Geneva, Tahoma, sans-serif">17-20 Calls</span></i>    
+         <p class="card-text fs-6 container-fulid ps-5 ">Contacts the Manager and Delivery team around 17-20 times daily for delivery updates.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h6 class="card-title m-1">An averange</h6>
+        <h2 class="h2">Delivery Boy</h2>
+         <i class="fa-regular fa-clock icons m-1 fs-5 "><span class="text-dark container" style="font-family:Verdana, Geneva, Tahoma, sans-serif">160 hours</span></i>    
+         <p class="card-text fs-6 container-fulid ps-5 ">Invests around 160 hours annually in manual accounting generation tasks.</p>
+         <i class="fa-solid fa-phone-flip icons m-1 fs-5"><span class="text-dark container" style="font-family:Verdana, Geneva, Tahoma, sans-serif">10-12 Calls</span></i>    
+         <p class="card-text fs-6 container-fulid ps-5 fst-normal ">Makes 10-12 calls daily to confirm addresses and check on order status updates.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100"> 
+      <div class="card-body">
+         <h6 class="card-title m-1">An averange</h6>
+        <h2 class="h2">Customer</h2>
+         <i class="fa-solid fa-rotate-right icons m-1 fs-5 "><span class="text-dark container" style="font-family:Verdana, Geneva, Tahoma, sans-serif"> Order Placing</span></i>    
+         <p class="card-text fs-6 container-fulid ps-5 ">Does not order again when delivery is delayed or ordered items mismatch Lorem, ipsum.</p>
+         <i class="fa-solid fa-phone-flip icons m-1 fs-5"><span class="text-dark container" style="font-family:Verdana, Geneva, Tahoma, sans-serif">2 Calls</span></i>    
+         <p class="card-text fs-6 container-fulid ps-5 fst-normal">Reaches out 2 times per order for order delivery status and directing the driver</p>      
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+<div class="d-grid gap-2 col-3 mx-auto">
+  <button class="btn btn-dark" type="button">Automate Milk Delivery Process</button>
+</div>
+    </header>
+     <!-- Side-by-Side Layout Section -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Content Section -->
+            <div class="col-md-6 content-section">
+                <h1>Effortlessly Manage Your <span  style="color: #39c0ff;">Milk Delivery Business</span> with Our App</h1>
+                <p class="lead">For your milk delivery business, choose from daily, alternate-day, or weekly milk subscriptions to suit your lifestyle perfectly. Our milk delivery software also offers a convenient vacation mode, allowing you to pause deliveries whenever needed.</p>
+                
+                <!-- Buttons for Features -->
+                <div class="custom-buttons m-2 ">
+                    <button class="btn btn-outline-primary feature-tag">Customizable Delivery Schedule</button>
+                    <button class="btn btn-outline-primary feature-tag">Vacation Mode</button>
+                    <button class="btn btn-outline-primary feature-tag">Pause & Resume Subscriptions</button>
+                    <button class="btn btn-outline-primary feature-tag">Secure Online Payment</button>
+                </div>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-md-6 text-center">
+                <div class="img-container">
+                    <img src="asset 1.png " alt="Milk Carton" class="image-box img-fluid"> 
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- marquee animation -->
+   <div class="marquee " >
+    <div class="marquee-content">
+        SPECIAL PRICING FOR DAIRY STARTUP →    SPECIAL PRICING FOR DAIRY STARTUP →    SPECIAL PRICING FOR DAIRY STARTUP →
+         SPECIAL PRICING FOR DAIRY STARTUP →   SPECIAL PRICING FOR DAIRY STARTUP →      SPECIAL PRICING FOR DAIRY STARTUP →
+    </div>
+   </div>
+<div class="text-center mt-5">
+  <h1 class="fs-2 fw-bolder">How Our <span style="color: #39c0ff;">Milk Delivery Solution</span>
+     Simplifies <span style="color: #39c0ff;"> Dairy Process</span></h1>
+     <h6 class="text-center " style="padding-left:235px; padding-right:200px;">Upgrade your milk delivery business by transforming traditional operations into a streamlined, customer-focused model. Our expertly crafted on-demand milk delivery solution revolutionizes how you distribute and manage milk,<span class="text-center">putting the customer experience first.</span></h6>
+</div>
+ <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Content Section -->
+            <div class="col-md-6 content-section">
+                <h2 style="color: #39c0ff; font-weight: bold;">Merchant <span class="text-dark">Dashboard</span></h2>
+                <p class="lead fs-5">Efficiently handle orders, optimize routes, inventory control, and insights through our intuitive user-friendly merchant dashboard.</p>
+                 <div class="d-grid gap-2 col-3 me-auto">
+                 <button class="btn btn-dark" type="button">Get a Demo</button>
+                  </div>
+            </div>
+            <!-- Image Section -->
+            <div class="col-md-6 text-center">
+                <div class="img-container">
+                    <img src="asset 2.png " alt="Milk Carton" class="image-box img-fluid"> 
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+<div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Content Section -->
+            <div class="col-md-6 content-section">
+                <h2 style="color: #39c0ff; font-weight: bold;">Customer <span class="text-dark">Application</span></h2>
+                <p class="lead fs-5">Order fresh milk online and customize your deliveries with our convenient milk delivery customer application.<p>
+                 <div class="d-grid gap-2 col-3 me-auto">
+                 <button class="btn btn-dark" type="button">Get a Demo</button>
+                  </div>
+            </div>
+            <!-- Image Section -->
+            <div class="col-md-6 text-center">
+                <div class="img-container">
+                    <img src="asset 3.png " alt="Milk Carton" class="image-box img-fluid"> 
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Content Section -->
+            <div class="col-md-6 content-section">
+                <h2 style="color: #39c0ff; font-weight: bold;">Driver<span class="text-dark">Application</span></h2>
+                <p class="lead fs-5">Navigate routes, track orders, and ensure efficient milk deliveries with our user-friendly driver application.<p>
+                 <div class="d-grid gap-2 col-3 me-auto">
+                 <button class="btn btn-dark" type="button">Get a Demo</button>
+                  </div>
+            </div>
+            <!-- Image Section -->
+            <div class="col-md-6 text-center">
+                <div class="img-container">
+                    <img src="asset 4.png " alt="Milk Carton" class="image-box img-fluid"> 
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+<div class="text-center" style="background-color:#f1f7fd;">
+  <h1 class="fs-2 fw-bolder">Benifits Of Our <span style="color: #39c0ff;">Milk Delivery App</span></h1>
+     <h6 class="text-center" style="padding-left:235px; padding-right:235px; ">Boost productivity with automated order management, optimize delivery routes for fuel efficiency, and track deliveries in real-time. Elevate customer satisfaction through our user-friendly mobile app for milk delivery.</h6>
+     <div class="row" style="margin-left:235px; margin-top:30px;">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-center"><img src="asset 5.png" alt=""></h5>
+        <p class="card-text text-center">Cost Reduction</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-center"><img src="asset 6.png" alt=""></h5>
+        <p class="card-text text-center">Regular and Free Updates</p>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-center"><img src="asset 7.png" alt=""></h5>
+        <p class="card-text text-center">Customer Retention</p>
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="row" style="margin-left:235px; margin-top:30px;">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-center"><img src="asset 8.png" alt=""></h5>
+        <p class="card-text text-center">Faster Go-To-Market</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-center"><img src="asset 9.png" alt=""></h5>
+        <p class="card-text text-center">Operational Efficiency</p>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-center"><img src="asset 10.png" alt=""></h5>
+        <p class="card-text text-center">Data-Driven Decisions</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+ <div class="d-grid gap-2 col-2 mx-auto mt-5">
+  <button class="btn btn-dark" type="button">View More</button>
+</div>
+</div>
+<!-- accrodian start -->
+<div class="h1">
+ <h2 class="text-center mt-5 fw-bold" style="color: #39c0ff;">Frequently Asked Question</h2>
+  <div class="accordion m-5" style="font-size: 20px;" id="accordionExample ">
+  <div class="accordion-item " style="border: none;">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" style="font-weight:600; color:#000;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          →  What is MilkRide?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong style="font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; color:#000; font-size: 15px;"> MilkRide is a SaaS-based milk delivery software designed to streamline and automate milk delivery operations for dairy businesses. It offers features like order management, route optimization, customer management, billing, and analytics, enhancing efficiency and customer satisfaction in the milk delivery industry. </strong>   
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="accordion-item "style="border: none;">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" style="font-weight:600; color:#000;"   type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+       → What is management software?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong style="font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; color:#000; font-size: 15px;">Dairy management software is a specialized tool designed to streamline and automate various operations in dairy farms and processing facilities. It helps manage tasks like milk production, inventory, quality control, sales, and distribution, improving efficiency and productivity in the dairy industry.
+        </strong>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="accordion-item" style="border: none;">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed"style="font-weight:600; color: #000;"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        → What convenience Does a Milk Delivery App Offer to Customer?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong style="font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; color:#000; font-size: 15px;">A milk delivery app offers convenience by allowing customers to order fresh milk and dairy products online, schedule deliveries at their preferred time, track orders in real-time, access a variety of products, and make payments securely, all from the comfort of their homes.</strong>
+      </div>
+    </div>
+     <hr>
+      <div class="accordion-item" style="border: none;">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed"style="font-weight:600; color:#000;"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        → Why is Milk Delivery Software Becoming a Necessity for Dairy Business?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong style="font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; color:#000; font-size: 15px;">Milk delivery software is essential for dairy businesses due to the increasing demand for convenience and efficient operations. It streamlines order management, route optimization, inventory tracking, and customer communication. By automating processes, dairy businesses can reduce operational costs, enhance customer satisfaction through timely deliveries.</strong>
+      </div>
+    </div>
+    <hr>
+    <div class="accordion-item" style="border: none;">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed"style="font-weight:600; color: #000;"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        → What Are The Advantages Of Implementing Last-Mile Delivery Software?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong style="font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; color:#000; font-size: 15px;">Implementing last-mile delivery software offers advantages such as optimized route planning for faster deliveries, real-time tracking for improved visibility, enhanced customer experience with accurate ETAs and delivery notifications, cost savings through efficient resource utilization, and data analytics for continuous performance optimization and customer satisfaction.</strong>
+      </div>
+    </div>
+    <hr>
+    <div class="accordion-item" style="border: none;">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed"style="font-weight:600; color: #000;"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        → How Can Route Optimization Software Improve Efficiency for Delivery Operation?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong style="font-weight: 400; font-family: Verdana, Geneva, Tahoma, sans-serif; color:#000; font-size: 15px;">Route optimization software improves delivery efficiency by analyzing factors like traffic conditions, delivery locations, and time constraints to create optimized delivery routes. This reduces fuel costs, saves time, increases on-time deliveries, and enhances overall operational productivity.</strong>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>
+</div>
+
+
+
+<!-- image start -->
+
+<div class="row m-5 text-center" style="border: none;">
+  <h2 class="fw-bold">News <span style="color: #39c0ff; ">& Insights</span></h2>
+</div>
+<div class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center">
+  <div class="col">
+    <div class="card h-100">
+      <img src="asset 11.jpeg" class="card-img-top" alt="...">
+      <div class="card-body1" >
+       <i class="fa-regular fa-calendar icons m-3 fs-6 "><span class="text-dark container" style="font-family:Verdana, Geneva, Tahoma, sans-serif">Octomber 10, 2024</span></i>  
+         <p class="card-text fs-6 container-fulid ps-3 fw-bold">Exploring Quick Commerce:The Future Of Fast Delivery
+           </p>
+        <p class="card-text"><a href="#Readmore" class="ps-3 fs-6" style="text-decoration: none;">Readmore →</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="asset 12.png" class="card-img-top" alt="...">
+      <div class="card-body1">
+        <i class="fa-regular fa-calendar icons m-3 fs-6 "><span class="text-dark container" style="font-family:Verdana, Geneva, Tahoma, sans-serif">Sepmteber 28, 2024</span></i>  
+         <p class="card-text fs-6 container-fulid ps-3 fw-bold">Eco-Friendly Dairy Delivery:How Milkride Supports Sustainability
+           </p>
+        <p class="card-text"><a href="#Readmore" class="ps-3 fs-6" style="text-decoration: none;">Readmore →</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="asset 13.jpeg" class="card-img-top" alt="...">
+      <div class="card-body1">
+         <i class="fa-regular fa-calendar icons m-3 fs-6 "><span class="text-dark container" style="font-family:Verdana, Geneva, Tahoma, sans-serif">Sepmteber 20, 2024</span></i>  
+         <p class="card-text fs-6 container-fulid ps-3 fw-bold">Dairy Milk Management:Why it's a Must-have for Dairy Farms
+           </p>
+        <p class="card-text"><a href="#Readmore" class="ps-3 fs-6" style="text-decoration: none;">Readmore →</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row m-5 text-center">
+  <h2 class="fw-bold" style="color: #39c0ff;">Contact <span style="color: #000;">Us</span></h2>
+  <p class="text-center fs-6 mt-3">Connecting Your Dairy Dots-Our Milk Delivery Software Team is Here to Assist You Every Step of the Way</p>
+</div>
+
+ <div class="container my-5">
+        <div class="row align-items-center">
+           <!-- Image Section -->
+            <div class="col-md-6 text-center">
+                <div class="img-container">
+                    <img src="Screenshot 2024-10-14 190233.png" alt="Milk Carton" class="image-box img-fluid"> 
+                </div>
+            </div>
+            <!-- Content Section -->
+            <div class="col-md-6 content-section">
+  <div class="container mt-5">
+    <form>
+      <div class="mb-3 row">
+        <div class="col">
+          <label for="name" class="form-label">Name<span class="text-danger">*</span></label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="col">
+          <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <div class="col">
+          <label for="phone" class="form-label">Phone<span class="text-danger">*</span></label>
+          <div class="input-group">
+            <select class="form-select">
+              <option selected>India (भारत)</option>
+              <!-- Add other countries here -->
+            </select>
+            <input type="text" class="form-control" value="+91" readonly>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <div class="col">
+          <label for="companyName" class="form-label">Company Name<span class="text-danger">*</span></label>
+          <input type="text" class="form-control" id="companyName" required>
+        </div>
+        <div class="col">
+          <label for="customers" class="form-label">Number of Customers<span class="text-danger">*</span></label>
+          <input type="number" class="form-control" id="customers" required>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Message<span class="text-danger">*</span></label>
+        <textarea class="form-control" id="message" rows="3" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+  </div>
+
+  
+
+
+            </div>
+           </div>
+       </div>  
+
+<!-- footer section start -->
+
+  <footer class="footer text-center text-md-start">
+    <div class="container">
+      <div class="row">
+        <!-- Logo and Description -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="logo" style="padding-left: 23px;">
+          <img src="asset 15.png" alt="">
+          </div>
+          <p class="m-4">A SaaS based milk delivery software designed to streamline and automate milk delivery operations for dairy businesses.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Why MilkRide?</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <ul class="list-unstyled p-2">
+            <li><a href="mailto:hello@milkride.com">📧 hello@milkride.com</a></li>
+            <li> +91-999-855-9055</li>
+            <li> +91-957-484-6188</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom section -->
+      <div class="row mt-4">
+        <div class="col-md-6 text-center text-md-start">
+          <p>© 2024 MilkRide. All rights reserved.</p>
+          <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
+        </div>
+        <div class="col-md-6 text-center text-md-end social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ 
+
+
+    
+</body>
+</html>
